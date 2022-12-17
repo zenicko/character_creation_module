@@ -9,7 +9,7 @@ from graphic_arts.start_game_banner import run_screensaver
 
 def attack(char_name: str, char_class: str) -> str | None:
     """Generate attack points.
-    
+
     The attack points depend on a game character that is selected a player.
 
     Args:
@@ -38,7 +38,7 @@ def attack(char_name: str, char_class: str) -> str | None:
 
 def defence(char_name: str, char_class: str) -> str | None:
     """Generate protection points.
-    
+
     The protection points depend on a game character that is selected a player.
 
     Args:
@@ -65,7 +65,18 @@ def defence(char_name: str, char_class: str) -> str | None:
     return None
 
 
-def special(char_name: str, char_class: str) -> str:
+def special(char_name: str, char_class: str) -> str | None:
+    """Generate special skills.
+
+    The special skills depend on a game character that is selected a player.
+
+    Args:
+    char_name: The name of a player.
+    char_class: The type of a game character.
+
+    Returns:
+    The message about the using special skill or `None`.
+    """
     specifical_skill: int = None
 
     if char_class == 'warrior':
