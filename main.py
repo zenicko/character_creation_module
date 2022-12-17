@@ -1,9 +1,24 @@
+"""Main is a package to create the game's characters."""
+
+from __future__ import annotations
+
 from random import randint
 
 from graphic_arts.start_game_banner import run_screensaver
 
 
-def attack(char_name: str, char_class: str) -> str:
+def attack(char_name: str, char_class: str) -> str | None:
+    """Generate attack points.
+    
+    The points depends on a game character that is selected a player.
+
+    Args:
+    char_name: The name of a player.
+    char_class: The type of a game character.
+
+    Returns:
+    The message about the attack or `None`.
+    """
     damage: int = None
 
     if char_class == 'warrior':
