@@ -36,7 +36,18 @@ def attack(char_name: str, char_class: str) -> str | None:
     return None
 
 
-def defence(char_name: str, char_class: str) -> str:
+def defence(char_name: str, char_class: str) -> str | None:
+    """Generate protection points.
+    
+    The protection points depend on a game character that is selected a player.
+
+    Args:
+    char_name: The name of a player.
+    char_class: The type of a game character.
+
+    Returns:
+    The message about the blocked attack or `None`.
+    """
     blocked: int = None
 
     if char_class == 'warrior':
