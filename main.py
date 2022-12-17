@@ -98,6 +98,15 @@ def special(char_name: str, char_class: str) -> str | None:
 
 
 def start_training(char_name: str, char_class: str) -> str:
+    """Start the training of a skill of a game character.
+
+    Args:
+    char_name: The name of a player.
+    char_class: The type of a game character.
+
+    Returns:
+    The message `The training is over.`(en) or `Тренировка окончена.`(ru).
+    """
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
