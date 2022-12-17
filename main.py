@@ -10,7 +10,7 @@ from graphic_arts.start_game_banner import run_screensaver
 def attack(char_name: str, char_class: str) -> str | None:
     """Generate attack points.
     
-    The points depends on a game character that is selected a player.
+    The attack points depend on a game character that is selected a player.
 
     Args:
     char_name: The name of a player.
