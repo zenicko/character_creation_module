@@ -7,6 +7,22 @@ from random import randint
 from graphic_arts.start_game_banner import run_screensaver
 
 
+class Character:
+    ...
+
+
+class Warrior(Character):
+    ...
+
+
+class Mage(Character):
+    ...
+
+
+class Healer(Character):
+    ...
+
+
 def attack(char_name: str, char_class: str) -> str | None:
     """Generate attack points.
 
